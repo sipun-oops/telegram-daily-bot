@@ -17,7 +17,7 @@ async def daily_post():
 def schedule_job():
     asyncio.run(daily_post())
 
-schedule.every().day.at("18:26").do(schedule_job)
+schedule.every().day.at("07:26").do(schedule_job)
 
 
 while True:
